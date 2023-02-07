@@ -1,0 +1,22 @@
+@media (max-width:$headerBP1) {
+    .header {
+        .header-block {
+            margin: 0 20px 0;
+        }
+    }
+}
+@media (max-width:$headerBP2) {
+    .header {
+        padding-top: 20px;
+        .header-block {
+            .menu {
+                &__items {
+                    display: none;
+                }
+                .burger {
+                    display: initial;
+                }
+            }
+        }
+    }
+}

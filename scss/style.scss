@@ -1,0 +1,27 @@
+@import "./var";
+@import "./mixin";
+@import "./header/header";
+@import "./header/header-media";
+@import "./hero/hero";
+@import "./hero/hero-media";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.head-text {
+    font-family: "Georgia";
+    font-size: 35px;
+    color: black;
+}
