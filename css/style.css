@@ -51,11 +51,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
   display: none;
+  position: relative;
+  cursor: pointer;
 }
 .header .header-block .menu .burger__line {
   width: 30px;
   border-bottom: 2px solid #f1cdb3;
   padding-bottom: 5px;
+}
+.header .header-block .menu .burger__line:hover {
+  color: #725f53;
 }
 .header .header-block .menu .burger__line::before {
   content: "";
@@ -70,6 +75,35 @@
   width: 30px;
   border-bottom: 2px solid #f1cdb3;
   padding-bottom: 5px;
+}
+.header .header-block .menu .burger:hover .window-menu {
+  display: block;
+}
+.header .header-block .menu .window-menu {
+  width: 150px;
+  height: 190px;
+  border: 1px solid #f1cdb3;
+  background: #f1cdb3;
+  padding-top: 30px;
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: 3px;
+  right: 40px;
+  display: none;
+}
+.header .header-block .menu .window-menu__item {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.header .header-block .menu .window-menu__link {
+  color: #483d36;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.header .header-block .menu .window-menu__link:hover {
+  color: #b9947d;
 }
 .header .header-block .menu__items {
   display: -webkit-box;
