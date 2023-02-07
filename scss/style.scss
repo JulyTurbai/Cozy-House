@@ -4,6 +4,8 @@
 @import "./header/header-media";
 @import "./hero/hero";
 @import "./hero/hero-media";
+@import "./about/about";
+@import "./about/about-media";
 
 * {
     margin: 0;
@@ -23,5 +25,7 @@ li {
 .head-text {
     font-family: "Georgia";
     font-size: 35px;
-    color: black;
+    color: #545454;
+    font-weight: 300;
+    line-height: 40px;
 }

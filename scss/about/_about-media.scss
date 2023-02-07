@@ -1,0 +1,45 @@
+@media (max-width: $aboutBP1) {
+    .about {
+        .about-block {
+            margin: 0 20px 0;
+            &__content {
+                margin-left: 80px;
+            }
+        }
+    }
+    
+}
+@media (max-width: $aboutBP2) {
+    .about {
+        .about-block {
+            padding: 100px 0 50px;
+            &__img {
+                width: 200px;
+            }
+            &__content {
+                margin-left: 50px;
+                .head-text {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: $aboutBP3) {
+    .about {
+        .about-block {
+            padding: 50px 0 50px;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            &__content {
+                margin-left: 0;
+                margin-bottom: 20px;
+                .head-text {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    
+}
