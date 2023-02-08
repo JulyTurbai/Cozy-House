@@ -368,9 +368,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -378,54 +378,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: center;
           flex-direction: center;
-}
-.friends .friends-block .friends-content .scroll--left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #f1cdb3;
-  border-radius: 50px;
-  background: none;
-  cursor: pointer;
-}
-.friends .friends-block .friends-content .scroll--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #f1cdb3;
-  border-radius: 50px;
-  background: none;
-  cursor: pointer;
-}
-.friends .friends-block .friends-content .scroll--right:hover {
-  background: #f1cdb3;
-}
-.friends .friends-block .friends-content .scroll--left:hover {
-  background: #f1cdb3;
 }
 .friends .friends-block .friends-content .pets {
   display: -webkit-box;
@@ -441,6 +393,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  overflow-x: scroll;
+  padding: 24px;
+  width: 875px;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-padding: 24px;
+  border-radius: 8px;
+  gap: 17px;
 }
 .friends .friends-block .friends-content .pets .pet-card {
   display: -webkit-box;
@@ -459,10 +419,8 @@
   width: 275px;
   border-radius: 10px;
   background: #fafafa;
-  margin-right: 10px;
-}
-.friends .friends-block .friends-content .pets .pet-card--last {
-  margin-right: 0;
+  border-radius: 8px;
+  scroll-snap-align: start;
 }
 .friends .friends-block .friends-content .pets .pet-card__name {
   text-align: center;
@@ -544,11 +502,11 @@
   }
 }
 @media (max-width: 1020px) {
+  .friends .friends-block {
+    margin: 0 10px 0;
+  }
   .friends .friends-block .friends-content .pets {
     margin: 0 20px;
-  }
-  .friends .friends-block .friends-content .pets .pet-card--last {
-    display: none;
   }
 }
 @media (max-width: 760px) {
@@ -561,6 +519,7 @@
   }
   .friends .friends-block .friends-content .pets {
     margin: 0 20px;
+    width: 300px;
   }
   .friends .friends-block .friends-content .pets .pet-card--middle {
     display: none;
@@ -571,16 +530,17 @@
     font-size: 30px;
     margin-bottom: 50px;
   }
-  .friends .friends-block .friends-content .scroll--left {
-    width: 40px;
-    height: 40px;
-  }
-  .friends .friends-block .friends-content .scroll--right {
-    width: 40px;
-    height: 40px;
+  .friends .friends-block .friends-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .friends .friends-block .friends-content .pets {
     margin: 0;
+    width: 200px;
   }
   .friends .friends-block .friends-content .pets .pet-card {
     width: 180px;
@@ -592,6 +552,9 @@
   }
   .friends .friends-block .friends-content .pets .pet-card__button {
     width: 150px;
+  }
+  .friends .friends-block .button-block .button-know {
+    width: 220px;
   }
 }
 * {

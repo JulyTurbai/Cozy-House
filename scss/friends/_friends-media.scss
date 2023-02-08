@@ -8,12 +8,10 @@
 @media (max-width:$friendsBP2) {
     .friends {
         .friends-block {
+            margin: 0 10px 0;
             .friends-content {
                 .pets {
                     margin: 0 20px;
-                    .pet-card--last {
-                        display: none;
-                    }
                 }
             }
         }
@@ -30,6 +28,7 @@
             .friends-content {
                 .pets {
                     margin: 0 20px;
+                    width: 300px;
                     .pet-card--middle {
                         display: none;
                     }
@@ -46,16 +45,11 @@
                 margin-bottom: 50px;
             }
             .friends-content {
-                .scroll--left {
-                    width: 40px;
-                    height: 40px;
-                }
-                .scroll--right {
-                    width: 40px;
-                    height: 40px;
-                }
+                display: flex;
+                justify-content: center;
                 .pets {
                     margin: 0;
+                    width: 200px;
                     .pet-card {
                         width: 180px;
                         height: 320px;
@@ -67,6 +61,11 @@
                             width: 150px;
                         }
                     }
+                }
+            }
+            .button-block {
+                .button-know {
+                    width: 220px;
                 }
             }
         }
