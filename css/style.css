@@ -371,28 +371,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: center;
-          flex-direction: center;
 }
 .friends .friends-block .friends-content .pets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   overflow-x: scroll;
   padding: 24px;
   width: 875px;
@@ -401,6 +384,19 @@
   scroll-padding: 24px;
   border-radius: 8px;
   gap: 17px;
+}
+.friends .friends-block .friends-content .pets::-webkit-scrollbar {
+  width: 20px;
+}
+.friends .friends-block .friends-content .pets::-webkit-scrollbar-track {
+  background: #f1cdb3;
+  border-radius: 10px;
+}
+.friends .friends-block .friends-content .pets::-webkit-scrollbar-thumb {
+  background: #d4ad93;
+  border: 3px solid #f1cdb3;
+  border-radius: 10px;
+  height: 100px;
 }
 .friends .friends-block .friends-content .pets .pet-card {
   display: -webkit-box;

@@ -6,9 +6,10 @@
             margin-bottom: 110px
         }
         .friends-content {
-            @include flex(center, center, center);
+            display: flex;
+            justify-content: center;
             .pets {
-                @include flex();
+                display: flex;
                 overflow-x: scroll;
                 padding: 24px;
                 width: 875px;
@@ -16,6 +17,19 @@
                 scroll-padding: 24px;
                 border-radius: 8px;
                 gap: 17px;
+                &::-webkit-scrollbar {
+                    width: 20px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1cdb3;
+                    border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #d4ad93;
+                    border: 3px solid #f1cdb3;
+                    border-radius: 10px;
+                    height: 100px;
+                }
                 .pet-card {
                     display: flex;
                     flex-wrap: wrap;
@@ -27,7 +41,6 @@
                     background: #fafafa;
                     border-radius: 8px;
                     scroll-snap-align: start;
-                    
                     &__name {
                         text-align: center;
                         font-size: 20px;
