@@ -19,12 +19,15 @@
         .hero-block {
             min-height: 700px;
             padding: 50px 0 0px;
-            &__main-text {
-                font-size: 40px;
+            .hero-content {
+                &__main-text {
+                    font-size: 40px;
+                }
+                &__descr {
+                    max-width: 300px;
+                }
             }
-            &__descr {
-                max-width: 300px;
-            }
+            
         }
     }
     
@@ -34,11 +37,13 @@
         .hero-block {
             padding: 50px 0 50px;
             min-height: 640px;
+            .hero-content {
+                &__main-text {
+                    font-size: 37px;
+                }
+            }
             &__img {
                 width: 200px;
-            }
-            &__main-text {
-                font-size: 37px;
             }
         }
     }
@@ -52,9 +57,12 @@
             &__img {
                 width: 150px;
             }
-            &__main-text {
-                font-size: 35px;
+            .hero-content {
+                &__main-text {
+                    font-size: 35px;
+                }
             }
+            
         }
     }
     
@@ -67,13 +75,15 @@
             &__img {
                 width: 100px;
             }
-            &__main-text {
-                font-size: 30px;
-                margin-bottom: 20px;
-            }
-            &__descr {
-                max-width: 300px;
-                font-size: 13px;
+            .hero-content {
+                &__main-text {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                &__descr {
+                    max-width: 300px;
+                    font-size: 13px;
+                }
             }
             .button {
                 width: 180px;

@@ -180,14 +180,14 @@
   width: 250px;
   display: none;
 }
-.hero .hero-block__main-text {
+.hero .hero-block .hero-content__main-text {
   font-size: 44px;
   color: white;
   font-family: "Georgia";
   font-weight: 200;
   margin-bottom: 40px;
 }
-.hero .hero-block__descr {
+.hero .hero-block .hero-content__descr {
   max-width: 450px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -239,10 +239,10 @@
     min-height: 700px;
     padding: 50px 0 0px;
   }
-  .hero .hero-block__main-text {
+  .hero .hero-block .hero-content__main-text {
     font-size: 40px;
   }
-  .hero .hero-block__descr {
+  .hero .hero-block .hero-content__descr {
     max-width: 300px;
   }
 }
@@ -251,11 +251,11 @@
     padding: 50px 0 50px;
     min-height: 640px;
   }
+  .hero .hero-block .hero-content__main-text {
+    font-size: 37px;
+  }
   .hero .hero-block__img {
     width: 200px;
-  }
-  .hero .hero-block__main-text {
-    font-size: 37px;
   }
 }
 @media (max-width: 500px) {
@@ -266,7 +266,7 @@
   .hero .hero-block__img {
     width: 150px;
   }
-  .hero .hero-block__main-text {
+  .hero .hero-block .hero-content__main-text {
     font-size: 35px;
   }
 }
@@ -278,11 +278,11 @@
   .hero .hero-block__img {
     width: 100px;
   }
-  .hero .hero-block__main-text {
+  .hero .hero-block .hero-content__main-text {
     font-size: 30px;
     margin-bottom: 20px;
   }
-  .hero .hero-block__descr {
+  .hero .hero-block .hero-content__descr {
     max-width: 300px;
     font-size: 13px;
   }
