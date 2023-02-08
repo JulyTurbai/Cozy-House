@@ -519,7 +519,6 @@
   }
   .friends .friends-block .friends-content .pets {
     margin: 0 20px;
-    width: 300px;
   }
   .friends .friends-block .friends-content .pets .pet-card--middle {
     display: none;
@@ -540,7 +539,6 @@
   }
   .friends .friends-block .friends-content .pets {
     margin: 0;
-    width: 200px;
   }
   .friends .friends-block .friends-content .pets .pet-card {
     width: 180px;
