@@ -1,0 +1,31 @@
+@media (max-width: $shelterBP1) {
+    .shelter {
+        .shelter-block {
+            margin: 0 20px 0;
+        }
+    }
+}
+@media (max-width: $shelterBP2) {
+    .shelter {
+        .shelter-block {
+            padding: 80px 0 0px;
+            .head-text {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width: $shelterBP3) {
+    .shelter {
+        .shelter-block {
+            padding: 80px 0 0px;
+            .help-block {
+                .help-card {
+                    &__name {
+                        margin-bottom: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
